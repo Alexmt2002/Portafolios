@@ -21,8 +21,11 @@ body {
   color: var(--mat-sys-on-surface);
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font: var(--mat-sys-body-medium);
-  margin: 0;
-  height: 100%;
+  margin: 0; 
+  min-height: 100vh;
+  
+
+  
 }
 
 // Fuente local Fascinate
@@ -31,6 +34,17 @@ body {
   font-weight: 400;
   src: url('assets/font/Fascinate-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Audiowide';
+  font-weight: 400;
+  src: url('assets/font/Audiowide-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Limelight';
+  font-weight: 400;
+  src: url('assets/font/Limelight-Regular.ttf') format('truetype');
+}
+
 
 // Clase para usar la fuente Fascinate en un texto específico
 .fascinate-text {
@@ -39,5 +53,5 @@ body {
 
 //Colores personalizados
 :root {
-  --mi-color-principal: #ff5722;
+  --mi-color-principal: #0f0f41;
 }

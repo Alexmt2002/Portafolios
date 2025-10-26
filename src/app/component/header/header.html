@@ -1,13 +1,26 @@
 <mat-toolbar>
-  <button mat-icon-button aria-label="Menú">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Alejadro Molina</span>
-  <span class="spacer"></span> <!-- Si quieres espacio, puedes definir .spacer en tu CSS -->
-  <button mat-icon-button aria-label="Favoritos">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button aria-label="Compartir">
+  <span class="nombre-usuario">Alejadro Molina</span>
+ 
+  <span class="spacer"></span> 
+  
+  <button class="boton-redes" mat-icon-button [matMenuTriggerFor]="menuRedes" matTooltip ="Contacto"> <!--Mat-icon-button le quita el fondo y esto   [matMenuTriggerFor]="menuRedes" para que cuando le des se habra el menu  -->
     <mat-icon>share</mat-icon>
   </button>
-</mat-toolbar>
+
+  <mat-menu #menuRedes="matMenu">
+    
+    <a mat-menu-item href="https://github.com/Alexmt2002?tab=repositories" target="_blank" rel="noopener noreferrer"><!--target blank para que se habra en otra pagina no en la misma que estas-->
+      <span>GitHub</span>
+    </a>
+
+    <a mat-menu-item href="https://www.linkedin.com/in/alejandro-molina-99873b387/" target="_blank" rel="noopener noreferrer">
+      <span>LinkedIn</span>
+    </a>
+
+    <a mat-menu-item href="https://www.instagram.com/alemolina.t/" target="_blank" rel="noopener noreferrer">
+      <span>Instagram</span>
+    </a>
+
+  </mat-menu>
+  
+  </mat-toolbar>

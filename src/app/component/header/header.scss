@@ -1,4 +1,33 @@
 .mat-toolbar {
   background-color: var(--mi-color-principal);
   color: var(--mat-sys-on-primary);
+
+}
+.nombre-usuario {
+     padding-left: 3%;
+    font-family: 'Audiowide', cursive;
+    color: #3dcfff;
+    font-size: 27px;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #0080ff;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.boton-redes {
+    margin-right: 2%;
+    
+  }
+.boton-redes mat-icon {
+    color: white;
+    transition: color 0.2s ease-in-out;
+    font-size: 140%;
+    padding-right: 20%;
+
+  }
+
+
+.boton-redes:hover mat-icon {
+   color: #3dcfff;
+   text-shadow:  0 0 10px #0080ff;
+
 }
