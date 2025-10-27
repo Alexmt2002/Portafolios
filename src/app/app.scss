@@ -1,48 +1,61 @@
-/* 1. Estilos para el body: fondo y centrado de su contenido */
+/* 1. Estilos para el body */
 body {
-  /* Fondo de pantalla */
+  /* ... tus estilos de fondo ... */
   background-image: url('../assets/img/fondo-chat.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* ... etc ... */
   
-  /* Clave para centrar el .contenedor-cartas */
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
- 
-
-  /* Mejoras de comportamiento */
+  flex-direction: column;
+  /* align-items: center; */ /* ¡QUITAMOS ESTA LÍNEA! */
+  justify-content: flex-start;
+  
+  /* ... resto de estilos del body ... */
   margin: 0;
-  min-height: 100vh; /* Usamos min-height para que pueda crecer si el contenido es largo */
-  font-family: sans-serif; /* Buena práctica añadir una fuente base */
+  min-height: 100vh;
+  font-family: sans-serif;
 }
+
+/* ... .header-class (está bien como está) ... */
 .header-class {
-  position: fixed;
-  width: 100%;
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+ position: fixed;
+width: 100%;
+z-index: 1000; 
 }
+
+
 /* 2. Estilos para el contenedor de las cartas */
 .contenedor-cartas {
-  margin-top: 45%;
+  /* ... todos tus estilos de grid, gap, width ... */
+  margin-top: 50px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tus 2 columnas, ¡perfecto! */
-  row-gap: 50px; // Espacio entre filas
-  column-gap: 60px;   // Espacio entre columnas
-
-  /* Dimensiones y estilo */
-  width: 80%; /* Un ancho adaptable */
-  max-width: 70%; /* Un límite para pantallas muy grandes */
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 60px;
+  width: 80%;
+  max-width: 1200px; /* Asegúrate que este max-width sea coherente */
   margin-bottom: 8%;
+
+  /* ¡AQUÍ LA MAGIA! */
+  /* Le decimos que se centre a sí mismo dentro del body */
+  align-self: center;
 }
 
-/* 3. (Opcional) Estilo básico para las cartas de dentro */
-// .carta {
-//   background-color: #f9f9f9;
-//   border-radius: 8px;
-//   padding: 15px;
-//   text-align: center;
-//   border: 1px solid #eee;
-// }
+.contenedor-presentacion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  
+  /* Asegúrate de que no tenga 'margin: auto' */
+  margin-top: 100px; /* Margen para el header fijo */
+  margin-bottom: 5%;
+  
+  /* ¡AQUÍ LA MAGIA! */
+  /* Lo movemos un 10% (o lo que quieras) desde la izquierda */ /* Ajusta este valor */
+}

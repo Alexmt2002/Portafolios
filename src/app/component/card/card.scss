@@ -1,4 +1,36 @@
 // box-shadown, para darle profundidad
-.carta{
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.15);
+.carta {
+  background: rgba(20, 30, 60, 0.6); /* Fondo semitransparente */
+  backdrop-filter: blur(8px); /* Efecto cristal */
+  color: #e0e0e0; /* Texto claro */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 162, 255, 0.4); /* Sombra azul brillante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 162, 255, 0.3);
+}
+
+.carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.6);
+}
+
+.mat-card-title {
+  color: #00bfff; /* Azul neón para destacar títulos */
+  font-weight: bold;
+}
+
+.mat-card-content p {
+  color: #cfd8dc;
+  font-size: 15px;
+}
+
+button[matButton] {
+  color: #00bfff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button[matButton]:hover {
+  color: #ffffff;
+  background-color: rgba(0, 162, 255, 0.2);
 }
