@@ -42,20 +42,20 @@ z-index: 1000;
 }
 
 .contenedor-presentacion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  width: 80%;
-  max-width: 1200px;
-  text-align: center;
-  
-  /* Asegúrate de que no tenga 'margin: auto' */
-  margin-top: 100px; /* Margen para el header fijo */
-  margin-bottom: 5%;
-  
-  /* ¡AQUÍ LA MAGIA! */
-  /* Lo movemos un 10% (o lo que quieras) desde la izquierda */ /* Ajusta este valor */
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;  /* Esto centra el TEXTO dentro del contenedor */
+ justify-content: center;
+ 
+ width: 90%;
+ max-width: 1400px;
+ text-align: center;
+ 
+ margin-top: 100px; /* Margen para el header fijo */
+ margin-bottom: 5%;
+ /* ¡Asegúrate de no tener un margin-left: 10% o similar! */
+ 
+ /* ¡AQUÍ LA MAGIA! */
+ align-self: center; /* Esto centra EL CONTENEDOR MISMO dentro del body */
 }

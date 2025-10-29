@@ -8,8 +8,9 @@
   /* Reemplazamos 'padding: 80px 10%;' por esto: */
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 10%;  /* Mantenemos el 10% a la izquierda */
-  padding-right: 5%; /* <-- ¡Reduce esto para mover la imagen a la derecha! */
+  padding-left: 5%; /* <-- Reducido */
+  padding-right: 5%;/* <-- ¡Reduce esto para mover la imagen a la derecha! */
+  gap: 200px;
 }
 
 .texto {
@@ -38,7 +39,7 @@
   width: 200px;
   filter: drop-shadow(0 0 20px rgba(0, 162, 255, 0.5));
   animation: flotar 3s ease-in-out infinite;
-  padding-left: 50%;
+  
 }
 
 @keyframes flotar {
